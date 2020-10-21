@@ -3,70 +3,106 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Breval Le Floch</title>
     <meta name="desciption" content="Site personel de Breval Le Floch">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <a class="login-button">log in</a>
-    <nav>
-        <ul>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-        </ul>
-    </nav>
-    <div class="nav-spacer"></div>
-    <page>
-        <section>
+<a class="login-button">log in</a>
+<nav onmouseover="navMountain()" onmouseleave="navMountainHide()">
+    <ul>
+        <li><span class="material-icons">face</span>
+            <div>Who I Am</div>
+        </li>
 
-            <div class="text">
-                <h1>Bréval Le Floch</h1>
-                <h2>Dévloppeur full stack</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint id eligendi labore tempora asperiores iste temporibus fuga laboriosam voluptatem explicabo iure in, fugit nisi corrupti laborum illo, ratione nobis consectetur!
-                </p>
-            </div>
-            <div class="avatar">
-                <img src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-19/s150x150/118070496_157602472636884_8721622353751881890_n.jpg?_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_ohc=7TRoCgbkqkcAX-asGyB&oh=19d30b840b3beec5037dff7d4724066b&oe=5F6FD0FF" alt="dessin du portrait de Bréval Le Floch">
-            </div>
-        </section>
-        <main>
-            <div class="content">
-                <h2>About ? </h2>
-                <h2> Know more ? </h2>
-            </div>
-            <feed>
-                <div class="card">
-                    Carte
-                </div>
-                <div class="card">
-                    Carte
-                </div>
-                <div class="card">
-                    Carte
-                </div>
-                <div class="card">
-                    Carte
-                </div>
-                <div class="card">
-                    Carte
-                </div>
-                <div class="card">
-                    Carte
-                </div>
-            </feed>
-        </main>
-    </page>
+        <li><span class="material-icons">work</span>
+            <div>My Projects</div>
+        </li>
+        <li><span class="material-icons">favorite</span>
+            <div>Valeur</div>
+        </li>
+        <li><span class="material-icons">flag</span>
+            <div>Demineur</div>
+        </li>
+    </ul>
+</nav>
+<div class="nav-spacer"></div>
+<div class="main">
+    <section class="head">
+        <div class="avatar">
+            <img src="./moi.png" alt="dessin du portrait de Bréval Le Floch" style="height: 55vh">
+        </div>
+        <div class="text">
+            <h1>Bréval Le Floch</h1>
+            <h2>Dévloppeur full stack</h2>
+            <p>
+                Passionné par les nouvelles technologies et par la physique, je suis quelqu'un de curieux et réfléchi.
+                <br>
+                J'aime trouver de nouvelles méthodes pour résoudre un problème.
+            </p>
+
+        </div>
+
+    </section>  <!--Section HEAD-->
+    <section class="about">
+        <div class="content">
+            <h2>About ? </h2>
+            <h2> Know more ? </h2>
+            <p>
+                Je m’appelle Breval Le Floch, j’ai 20 ans, je suis sur la voie pour devenir développeur Freelance, et je
+                suis étudiant à L’<a href="https://www.epsi.fr/">EPSI Nantes</a> Nantes en deuxième année.
+
+                Je suis passionné par l'informatique depuis les études préparatoires et j'aime envisager le monde qui
+                m'entoure
+                sous différents angles. L'informatique me permet d'explorer tout un nouveau monde régis par ces propres
+                règles logiques. Un monde qui permet à n'importe qui a l'aide d’un simple clavier d'imaginer et
+                construire n'importe quoi.
+
+                J'aimes faire des projets professionnels afin d’approfondir mes connaissances et de tester toujours plus
+                de technologie.
+            </p>
+        </div>
+        <!--        <feed>-->
+        <!--            <div class="card">-->
+        <!--                Carte-->
+        <!--            </div>-->
+        <!--            <div class="card">-->
+        <!--                Carte-->
+        <!--            </div>-->
+        <!--            <div class="card">-->
+        <!--                Carte-->
+        <!--            </div>-->
+        <!--            <div class="card">-->
+        <!--                Carte-->
+        <!--            </div>-->
+        <!--            <div class="card">-->
+        <!--                Carte-->
+        <!--            </div>-->
+        <!--            <div class="card">-->
+        <!--                Carte-->
+        <!--            </div>-->
+        <!--        </feed>-->
+
+    </section>  <!--Section KNOW MORE-->
+    <section class="projects">
+
+        test
+    </section>  <!--Section PROJECT-->
+    <section>
+
+        test
+    </section>  <!--Section VALUE-->
+    <section>
+
+        test
+    </section>  <!--Section REAL ME-->
+</div>
 </body>
 
-
+<script src="functions.js"></script>
 </html>

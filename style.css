@@ -6,6 +6,7 @@
     transition: all ease-in-out 0.3s;
     color: #ffffff;
     font-family: 'Noto Sans JP', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -14,12 +15,6 @@ body {
     height: 200vh;
 }
 
-page {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-}
 
 nav {
     position: fixed;
@@ -33,7 +28,8 @@ nav {
 }
 
 nav:hover {
-    width: 10%;
+    background-color: #296379;
+    width: 15%;
     border-radius: 0 8px 8px 0;
 }
 
@@ -42,38 +38,49 @@ nav:hover {
 }
 
 ul {
+
+    list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
     height: 100%;
     width: 100%;
 }
+
+li {
+    padding-left: 0.75vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+li:hover {
+    background-color: #091525;
+}
+
+li > div {
+    margin-left: 1vw;
+    display: none
+}
+
+nav:hover > ul > li > div {
+    display: block;
+}
+
 
 section {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* The image used */
-    background-image: url("https://www.teahub.io/photos/full/294-2949863_blurred-mountain-sunrise-wallpaper-evening.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-box-shadow: 0px 5px 18px -9px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 5px 18px -9px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 5px 18px -9px rgba(0, 0, 0, 0.75);
-    z-index: 4;
 }
 
-main {
-    background-color: #37393f;
-    height: 100vh;
-    display: flex;
-}
+
+
+
 
 .content {
-    background-color: #302b2f;
+
     width: 75%;
     display: flex;
     justify-content: center;
@@ -84,45 +91,14 @@ main {
     box-shadow: 7px 0px 18px -9px rgba(0, 0, 0, 0.75);
 }
 
-feed {
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    overflow: auto;
-    scroll-behavior: smooth;
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
-}
 
-feed ::-webkit-scrollbar {
-    width: 0 !important
-}
-
-.card {
-    margin: 15px;
-    width: 80%;
-    min-height: 400px;
-    background-color: #303136;
-    border-radius: 8px;
-    z-index: 3;
-    -webkit-box-shadow: 3px 0px 18px -8px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 3px 0px 18px -8px rgba(0, 0, 0, 0.75);
-    box-shadow: 3px 0px 18px -8px rgba(0, 0, 0, 0.75);
-}
-
-.text {
-    max-width: 25%;
-}
 
 .login-button {
     position: absolute;
     top: 15px;
     right: 20px;
     z-index: 6;
+    cursor: pointer;
 }
 
 a {
@@ -136,3 +112,68 @@ a {
 a:hover {
     background-color: #212225;
 }
+
+
+.head {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* The image used */
+    background-image: url("https://www.teahub.io/photos/full/294-2949863_blurred-mountain-sunrise-wallpaper-evening.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-box-shadow: 0px 5px 18px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 18px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 18px -9px rgba(0, 0, 0, 0.75);
+    z-index: 4;
+
+
+}
+
+.avatar > img {
+    border-radius: 50%;
+}
+
+
+.about{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #302b2f;
+
+
+    -webkit-box-shadow: 2px 10px 39px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 10px 39px -15px rgba(0,0,0,0.75);
+    box-shadow: 2px 10px 39px -15px rgba(0,0,0,0.75);
+
+
+}
+
+.projects {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #37393f;
+
+
+    -webkit-box-shadow: 2px 10px 39px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 10px 39px -15px rgba(0,0,0,0.75);
+    box-shadow: 2px 10px 39px -15px rgba(0,0,0,0.75);
+
+
+
+}
+
+
+
+
+
+
+
+
